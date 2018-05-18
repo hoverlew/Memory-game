@@ -1,13 +1,11 @@
 html {
     box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-
 html,
 body {
     width: 100%;
@@ -15,31 +13,25 @@ body {
     margin: 0;
     padding: 0;
 }
-
 pre {
     margin: 0;
     padding: 0;
 }
-
 body {
     background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
     font-family: 'Coda', cursive;
 }
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 12px 0 8px;
 }
-
-/* 挑战成功遮罩模块样式 */
 .shade {
     justify-content: center;
     align-items: center;
@@ -51,8 +43,6 @@ h1 {
     background: rgba(0, 0, 0, 0.4);
     display: none;
 }
-
-/*弹窗模块样式*/
 .shadeContent {
     width: 40%;
     height: 34%;
@@ -60,29 +50,22 @@ h1 {
     box-shadow: 12px 15px 20px rgba(46, 61, 73, 0.5);
     border-radius: 10px;
 }
-
-/*‘恭喜过关’样式*/
 .shadeContent p:nth-child(1) {
     font: 30px "sans-serif";
     text-align: center;
     color: #de3f40;
 }
-
-/*‘用时’样式*/
 .shadeContent p:not(:first-child) {
     font: 20px/24px "sans-serif";
     text-align: center;
     color: #333;
 }
-
-/*按键样式*/
 .shadeContent div {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 60%;
 }
-
 button {
     width: 40%;
     height: 40px;
@@ -93,8 +76,6 @@ button {
     box-shadow: 2px 5px 20px rgba(2, 65, 48, 0.5);
     background: #02ccba;
 }
-
-/*卡片模块样式*/
 .deck {
     width: 660px;
     min-height: 680px;
@@ -108,8 +89,6 @@ button {
     align-items: center;
     margin: 0 0 3em;
 }
-
-/*单元卡片样式*/
 .card {
     position: relative;
     height: 125px;
@@ -119,8 +98,6 @@ button {
     transform-style: preserve-3d;
     /*animation:changeRotate .6s ease 2s forwards;*/
 }
-
-/*单元卡片正反面共同样式*/
 .card_front,
 .card_back {
     position: absolute;
@@ -133,8 +110,6 @@ button {
     cursor: pointer;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
-
-/*单元卡片正样式*/
 .card_front {
     display: flex;
     justify-content: center;
@@ -143,8 +118,6 @@ button {
     background: #02b3e4;
     color: #ffffff;
 }
-
-/*单元卡片反样式*/
 .card_back {
     transform: rotateY(-180deg);/*good*/
     background: #2e3d49;
@@ -198,9 +171,6 @@ button {
     }
 }
 
-/*
- * Styles for the Score Panel
- */
 .score-panel {
     text-align: left;
     width: 345px;
